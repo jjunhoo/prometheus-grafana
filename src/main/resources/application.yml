@@ -1,0 +1,10 @@
+# http://127.0.0.1:8082/actuator
+management:
+  server:
+    port: 8082
+  endpoints:
+    prometheus:
+      enabled: true
+    web:
+      exposure:
+        include: prometheus
